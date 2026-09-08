@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Qingwei Zhang - Academic Homepage" />
+  <title>Qingwei Zhang | Academic Homepage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home">Qingwei Zhang</a>
+      <nav>
+        <a href="#about" data-en="About" data-zh="关于">About</a>
+        <a href="#research" data-en="Research" data-zh="科研">Research</a>
+        <a href="#publications" data-en="Publications" data-zh="论文">Publications</a>
+        <a href="#awards" data-en="Awards" data-zh="奖项">Awards</a>
+        <a href="#contact" data-en="Contact" data-zh="联系">Contact</a>
+      </nav>
+      <button id="langToggle" class="lang-btn" aria-label="Switch language">中文</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero container">
+      <div class="hero-copy">
+        <div class="eyebrow" data-en="Undergraduate Researcher · BUPT" data-zh="本科生科研者 · 北京邮电大学">Undergraduate Researcher · BUPT</div>
+        <h1>Qingwei Zhang <span class="cn-name">张清玮</span></h1>
+        <p class="lead"
+           data-en="I am an undergraduate student majoring in Intelligent Science and Technology at Beijing University of Posts and Telecommunications. My research interests include large language models, multimodal learning, AI agents, and efficient AI systems."
+           data-zh="北京邮电大学智能科学与技术专业本科生。研究兴趣包括大语言模型、多模态学习、智能体与高效人工智能系统。">
+          I am an undergraduate student majoring in Intelligent Science and Technology at Beijing University of Posts and Telecommunications. My research interests include large language models, multimodal learning, AI agents, and efficient AI systems.
+        </p>
+        <div class="chips">
+          <span>LLM Systems</span><span>AI Agents</span><span>Multimodal Learning</span><span>Efficient AI</span><span>Computer Vision</span>
+        </div>
+        <div class="hero-actions">
+          <a class="btn primary" href="mailto:2023213653@bupt.cn" data-en="Email Me" data-zh="联系我">Email Me</a>
+          <a class="btn" href="#publications" data-en="View Publications" data-zh="查看论文">View Publications</a>
+          <a class="btn" href="#" id="cvLink" data-en="CV (add later)" data-zh="简历（后续添加）">CV (add later)</a>
+        </div>
+      </div>
+      <aside class="profile-card">
+        <div class="avatar-placeholder">QZ</div>
+        <div class="profile-row"><span data-en="University" data-zh="学校">University</span><strong>BUPT</strong></div>
+        <div class="profile-row"><span data-en="Major" data-zh="专业">Major</span><strong data-en="Intelligent Science & Technology" data-zh="智能科学与技术">Intelligent Science & Technology</strong></div>
+        <div class="profile-row"><span data-en="Weighted Avg." data-zh="加权平均分">Weighted Avg.</span><strong>90.91 / 100</strong></div>
+        <div class="profile-row"><span>GPA</span><strong>3.75 / 4.0</strong></div>
+        <div class="profile-row"><span data-en="Research Goal" data-zh="研究目标">Research Goal</span><strong data-en="MPhil / PhD in AI" data-zh="AI 方向 MPhil / PhD">MPhil / PhD in AI</strong></div>
+      </aside>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="section-head">
+        <p class="section-kicker" data-en="PROFILE" data-zh="个人简介">PROFILE</p>
+        <h2 data-en="About Me" data-zh="关于我">About Me</h2>
+      </div>
+      <div class="card prose">
+        <p data-en="My current work focuses on practical and research-oriented AI systems, especially efficient large-model inference, multimodal agents, and representation learning. I enjoy combining modeling, system design, and experimental analysis to solve concrete problems."
+           data-zh="我目前主要关注面向实际应用与科研问题的人工智能系统，尤其是大模型高效推理、多模态智能体与表征学习。我希望将模型设计、系统实现与实验分析结合起来，解决具体而有价值的问题。">
+          My current work focuses on practical and research-oriented AI systems, especially efficient large-model inference, multimodal agents, and representation learning. I enjoy combining modeling, system design, and experimental analysis to solve concrete problems.
+        </p>
+      </div>
+    </section>
+
+    <section id="research" class="section container">
+      <div class="section-head">
+        <p class="section-kicker" data-en="SELECTED WORK" data-zh="代表性工作">SELECTED WORK</p>
+        <h2 data-en="Research & Projects" data-zh="科研与项目">Research & Projects</h2>
+      </div>
+      <div class="grid two">
+        <article class="card project">
+          <div class="tag">LLM Systems</div>
+          <h3 data-en="KV Cache Remaining Lifetime Prediction" data-zh="KV Cache 剩余寿命预测">KV Cache Remaining Lifetime Prediction</h3>
+          <p data-en="Predicting the remaining lifetime and future reuse of KV-cache chunks to support more efficient memory hierarchy and cache scheduling for large language model inference."
+             data-zh="面向大语言模型推理场景，预测 KV Cache chunk 的剩余寿命与未来复用情况，为显存—存储层级管理与缓存调度提供依据。">
+            Predicting the remaining lifetime and future reuse of KV-cache chunks to support more efficient memory hierarchy and cache scheduling for large language model inference.
+          </p>
+        </article>
+
+        <article class="card project">
+          <div class="tag">Multimodal Agent</div>
+          <h3 data-en="Preference-Aware Proactive In-Vehicle Agent" data-zh="基于用户偏好的车内主动智能体">Preference-Aware Proactive In-Vehicle Agent</h3>
+          <p data-en="A structured-memory framework for proactive spatial interaction in multi-user, multimodal in-vehicle scenarios, covering eventized memory, trigger-strength labeling, retrieval, and proactive response."
+             data-zh="针对多人多模态车内场景构建结构化记忆与主动响应框架，涵盖事件化记忆、触发强度标注、记忆检索与主动响应决策。">
+            A structured-memory framework for proactive spatial interaction in multi-user, multimodal in-vehicle scenarios, covering eventized memory, trigger-strength labeling, retrieval, and proactive response.
+          </p>
+        </article>
+
+        <article class="card project">
+          <div class="tag">Computer Vision</div>
+          <h3 data-en="Unsupervised Wind Turbine Blade Defect Detection" data-zh="风机叶片无监督缺陷检测">Unsupervised Wind Turbine Blade Defect Detection</h3>
+          <p data-en="Unsupervised anomaly detection for wind-turbine blade inspection using DINOv2 features, with emphasis on robust defect localization and evaluation under imbalanced industrial data."
+             data-zh="利用 DINOv2 表征开展风机叶片无监督异常检测，重点研究工业数据不均衡条件下的缺陷定位与稳健评估。">
+            Unsupervised anomaly detection for wind-turbine blade inspection using DINOv2 features, with emphasis on robust defect localization and evaluation under imbalanced industrial data.
+          </p>
+        </article>
+
+        <article class="card project">
+          <div class="tag">Human-Centered AI</div>
+          <h3 data-en="Hand Pose Estimation from Sparse Sensing" data-zh="基于稀疏传感的手部姿态估计">Hand Pose Estimation from Sparse Sensing</h3>
+          <p data-en="Exploring learning-based approaches for recovering expressive hand poses from sparse sensing signals, with an emphasis on compact representations and practical interaction scenarios."
+             data-zh="探索从稀疏传感信号恢复手部姿态的学习方法，关注紧凑表征与实际人机交互场景。">
+            Exploring learning-based approaches for recovering expressive hand poses from sparse sensing signals, with an emphasis on compact representations and practical interaction scenarios.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="publications" class="section container">
+      <div class="section-head">
+        <p class="section-kicker" data-en="PUBLICATIONS" data-zh="论文">PUBLICATIONS</p>
+        <h2 data-en="Selected Publication" data-zh="代表论文">Selected Publication</h2>
+      </div>
+      <article class="card publication">
+        <div>
+          <div class="pub-status" data-en="Accepted · WRC SARA 2026" data-zh="已录用 · WRC SARA 2026">Accepted · WRC SARA 2026</div>
+          <h3>DINOv2-Based Unsupervised Defect Detection for Wind Turbine Blade Inspection</h3>
+          <p><strong>Qingwei Zhang</strong> <span data-en="(second author)" data-zh="（第二作者）">(second author)</span></p>
+          <p class="muted" data-en="World Robot Conference · SARA 2026" data-zh="世界机器人大会 · SARA 2026">World Robot Conference · SARA 2026</p>
+        </div>
+      </article>
+    </section>
+
+    <section id="awards" class="section container">
+      <div class="section-head">
+        <p class="section-kicker" data-en="HONORS" data-zh="荣誉">HONORS</p>
+        <h2 data-en="Selected Awards" data-zh="代表性奖项">Selected Awards</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item card">
+          <span class="year">2026</span>
+          <div>
+            <h3 data-en="China Collegiate Computing Competition — National Finals, Third Prize"
+                data-zh="中国大学生计算机设计大赛全国总决赛三等奖">
+              China Collegiate Computing Competition — National Finals, Third Prize
+            </h3>
+          </div>
+        </div>
+        <div class="timeline-item card">
+          <span class="year">2026</span>
+          <div>
+            <h3 data-en="China Robotics and Artificial Intelligence Competition — National Finals, Third Prize"
+                data-zh="中国机器人与人工智能大赛全国总决赛三等奖">
+              China Robotics and Artificial Intelligence Competition — National Finals, Third Prize
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <div class="contact card">
+        <div>
+          <p class="section-kicker" data-en="CONTACT" data-zh="联系">CONTACT</p>
+          <h2 data-en="Open to MPhil / PhD opportunities" data-zh="欢迎 MPhil / PhD 交流">Open to MPhil / PhD opportunities</h2>
+          <p data-en="I am interested in research opportunities related to LLM systems, multimodal learning, AI agents, and efficient AI."
+             data-zh="我关注大模型系统、多模态学习、智能体与高效人工智能等方向，欢迎科研与研究生申请相关交流。">
+            I am interested in research opportunities related to LLM systems, multimodal learning, AI agents, and efficient AI.
+          </p>
+        </div>
+        <a class="btn primary" href="mailto:2023213653@bupt.cn">2023213653@bupt.cn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-wrap">
+      <span>© <span id="year"></span> Qingwei Zhang</span>
+      <span data-en="Built for academic applications." data-zh="用于学术与研究生申请展示。">Built for academic applications.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
